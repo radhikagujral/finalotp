@@ -18,7 +18,7 @@ from django.urls import path
 from  polls.views import Membership, otp, registration_view
 
 urlpatterns = [
-    path('membership/',Membership, name='membership'),
+    path('',Membership, name='membership'),
     path('otp/',otp, name= 'otp'),
     path('success/', registration_view, name='success'),
     # Add other URL patterns for your app

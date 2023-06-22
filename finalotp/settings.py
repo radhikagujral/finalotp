@@ -25,10 +25,11 @@ SECRET_KEY = 'django-insecure-1vp^zw=(gml$+krzlo_#2^4n0aavnlr)4$!@fyz+%mnadbk6@=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh','127.0.0.1']
 
 
 # Application definition
+
 
 INSTALLED_APPS = [
     'finalotp',
@@ -138,6 +139,8 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_HOST_USER = 'gujral.radhika11@gmail.com'
 
+
+LOGIN_URL='membership/'
 
 import os
 STATIC_URL ='static/'
