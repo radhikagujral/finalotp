@@ -23,3 +23,6 @@ urlpatterns = [
     path('success/', registration_view, name='success'),
     # Add other URL patterns for your app
 ]
+
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
